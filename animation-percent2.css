@@ -1,0 +1,60 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box
+{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    animation: scroll 6s linear 1;
+    position: relative;
+    border-radius: 20px;
+}
+@keyframes scroll 
+{
+    0%
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* transform: rotate(360deg); */
+    }
+    25%
+    {
+        position: absolute;
+        left: 1360px;
+        top: 0;
+        background-color: blue;
+        transform: rotate(360deg);
+        
+    }
+    50%
+    {
+        position: absolute;
+        top: 550px;
+        left: 1360px;
+        background-color: cadetblue;
+        transform: rotate(-120deg);
+    
+    }
+    75%
+    {
+        position: absolute;
+        left: 0;
+        top: 550px;
+        background-color: chocolate;
+        transform: rotate(360deg);
+
+    }
+    100%
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: orchid;
+        transform: rotate(-120deg);
+    }
+}
